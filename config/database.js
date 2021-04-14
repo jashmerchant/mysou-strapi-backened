@@ -19,11 +19,7 @@ module.exports = ({ env }) => {
 					},
 					options: {
 						ssl: true,
-						extra: {
-							ssl: {
-								rejectUnauthorized: false
-							},
-						},
+						sslfactory: 'org.postgresql.ssl.NonValidatingFactory'
 					}
 				}
 			}
