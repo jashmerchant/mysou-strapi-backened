@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "placements",
+  "info": {
+    "name": "Placement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Requirements": {
+      "type": "richtext",
+      "required": true
+    },
+    "Document": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

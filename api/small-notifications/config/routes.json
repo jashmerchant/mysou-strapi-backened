@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/small-notifications",
+      "handler": "small-notifications.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/small-notifications/count",
+      "handler": "small-notifications.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/small-notifications/:id",
+      "handler": "small-notifications.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/small-notifications",
+      "handler": "small-notifications.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/small-notifications/:id",
+      "handler": "small-notifications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/small-notifications/:id",
+      "handler": "small-notifications.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "last_year_papers",
+  "info": {
+    "name": "Last_Year_Papers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "PDF": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

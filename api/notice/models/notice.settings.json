@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notices",
+  "info": {
+    "name": "Notice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "PDF": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

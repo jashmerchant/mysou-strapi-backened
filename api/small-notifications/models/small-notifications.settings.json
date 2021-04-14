@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "small_notifications",
+  "info": {
+    "name": "Small_Notifications"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info"
+      ],
+      "default": "primary",
+      "required": true
+    }
+  }
+}

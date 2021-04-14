@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "big_notifications",
+  "info": {
+    "name": "Big_Notifications",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "Footer": {
+      "type": "richtext",
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info"
+      ],
+      "required": true,
+      "default": "info"
+    }
+  }
+}

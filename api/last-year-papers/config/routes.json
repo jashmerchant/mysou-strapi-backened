@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/last-year-papers",
+      "handler": "last-year-papers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/last-year-papers/count",
+      "handler": "last-year-papers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/last-year-papers/:id",
+      "handler": "last-year-papers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/last-year-papers",
+      "handler": "last-year-papers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/last-year-papers/:id",
+      "handler": "last-year-papers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/last-year-papers/:id",
+      "handler": "last-year-papers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
