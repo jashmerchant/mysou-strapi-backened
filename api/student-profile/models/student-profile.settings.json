@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_profiles",
+  "info": {
+    "name": "Student_Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Enrollment_Number": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "Course": {
+      "type": "string"
+    },
+    "Branch": {
+      "type": "string",
+      "required": true
+    },
+    "College": {
+      "type": "text",
+      "required": true
+    },
+    "Academic_Status": {
+      "type": "string",
+      "required": true
+    },
+    "Current_Sem": {
+      "type": "integer",
+      "required": true,
+      "max": 8,
+      "min": 1
+    },
+    "CPI": {
+      "type": "decimal",
+      "required": true,
+      "max": 10,
+      "min": 1
+    },
+    "CGPA": {
+      "type": "decimal",
+      "required": true,
+      "max": 10,
+      "min": 1
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
